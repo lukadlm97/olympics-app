@@ -16,5 +16,6 @@ namespace SportApplicationData.Models
         public string LastName { get; set; }
         public int YearOfBirth { get; set; }
         public Sport Sport { get; set; }
+        public Country Country { get; set; }
     }
 }
