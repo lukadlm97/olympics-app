@@ -1,0 +1,28 @@
+﻿@page
+@model SportApplication.Models.Catalog.SportIndexModel
+
+
+<div id="sports">
+    <h3>Sport Catalog</h3>
+    <div id="assetsTable">
+        <table class="table table-condensed" id="catalogIndexTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Individual</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var sport in Model.Sports)
+                {
+                    <tr class="sportRow">
+                        <td>@sport.Name</td>
+                        <td>@sport.Individual</td>
+                        <td>@sport.Category</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
